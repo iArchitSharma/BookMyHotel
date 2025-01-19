@@ -1,0 +1,83 @@
+.hotel-card {
+    border: 1px solid #878787;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .hotel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .hotel-card h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  
+  .hotel-card p {
+    font-size: 12px;
+    margin: 5px;
+  }
+  
+  .price-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    gap: 10px;
+  }
+  
+  .price-range {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  .viewButton {
+    background-color: #0A66BB;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .viewButton:hover {
+    background-color: #0b80ee;
+  }
+  
+  @media (max-width: 768px) {
+    .hotel-card h3 {
+      font-size: 18px; 
+    }
+  
+    .hotel-card p {
+      font-size: 14px; 
+    }
+  
+    .price-range {
+      font-size: 18px; 
+    }
+  
+    .viewButton {
+      font-size: 14px; 
+      padding: 8px 12px; 
+    }
+  }

@@ -1,0 +1,248 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .booking-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1001;
+    width: 800px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+  }
+  
+  .left-section {
+    width: 50%;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .left-section h2 {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .left-section h2 .hotel-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+  }
+  
+  .left-section h2 .room-type {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .room-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .amenity {
+    background: transparent;
+    border: 1px solid #0A66BB;
+    border-radius: 15px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #0A66BB;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .booking-details {
+    margin-bottom: 15px;
+  }
+  
+  .booking-details p {
+    margin-top: 0;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .person-count {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  
+  .right-section {
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .guest-info {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .guest-info h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .guest-info input {
+    display: block;
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .gender-selection {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .gender-selection label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+  
+  .add-person-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  
+  .add-person {
+    background: transparent;
+    color: #0A66BB;
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .guest-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .guest-navigation button {
+    background: #0A66BB;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .guest-navigation button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .book-button {
+    background: #0A66BB;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    margin-top: auto;
+    font-size: 16px;
+  }
+  
+  .success-message {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .booking-modal {
+      flex-direction: column;
+      width: 90%;
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      padding: 0;
+      border-right: none;
+    }
+  
+    .left-section {
+      margin-bottom: 20px;
+    }
+  
+    .room-image {
+      height: 150px;
+      object-fit: cover;
+    }
+  
+    .amenities {
+      justify-content: center;
+    }
+  
+    .guest-info input {
+      width: 90%;
+    }
+  
+    .book-button {
+      width: 100%;
+    }
+  
+    .guest-navigation {
+      width: 90%;
+    }
+  
+    .guest-navigation button {
+      width: 48%;
+    }
+  
+    .add-person-container {
+      width: 90%;
+    }
+  }

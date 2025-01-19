@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+header img {
+    height: 24px; /* Set height to 24px to match font size 24 */
+    align-self: flex-start; /* Align logo to the top */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav li {
+    margin-left: 167px; /* Space between the links */
+}
+
+.left-nav li:first-child {
+    margin-left: 0; /* Remove margin for the logo */
+}
+
+.left-nav li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Set font size to 16px */
+    font-family: 'Inter', Arial, sans-serif; /* Use Inter font */
+    font-weight: 400; /* Regular font weight */
+}
+
+.right-nav {
+    margin-left: auto; /* Push the Sign in link to the right */
+    margin-right: 16px;
+}
+
+.right-nav li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Set font size to 16px */
+    font-family: 'Inter', Arial, sans-serif; /* Use Inter font */
+    font-weight: 400; /* Regular font weight */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .left-nav, .right-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-nav li, .right-nav li {
+        margin: 10px 0;
+    }
+}

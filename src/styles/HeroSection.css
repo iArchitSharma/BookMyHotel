@@ -1,0 +1,272 @@
+.HeroSection {
+  margin-left: 72px;
+  margin-top: 94px;
+  position: relative;
+  z-index: 1;
+  min-height: 60vh;
+}
+
+.HeroBackground {
+  position: absolute;
+  top: -94px;
+  left: 244px;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 50%;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+.HeroSection h1 {
+  font-size: 36px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.HeroSection p {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 30px;
+  text-align: left;
+  width: 727px;
+}
+
+.Heroinput {
+  margin-top: 99px;
+}
+
+.Heroinput input, button {
+  margin-top: 26px;
+  margin-left: 49px;
+  height: 34px;
+  border-radius: 2px;
+}
+
+.Heroinput input {
+  background-color: #FFFFFF;
+  border: #878787;
+  box-shadow: inset 0 0 0 1px #878787;
+}
+
+.input1 {
+  width: 276px;
+}
+
+.input2 {
+  width: 107px;
+  border-right: 4px solid #878787;
+}
+
+.input3 {
+  width: 107px;
+  border-left: none;
+}
+
+.input4 {
+  width: 52px;
+}
+
+.Heroinput button {
+  background-color: #0A66BB;
+  color: #FFFFFF;
+  border: none;
+  width: 117px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Heroinput button:hover {
+  background-color: #0b80ee;
+  color: #FFFFFF;
+  border: none;
+  width: 117px;
+  font-size: 14px;
+}
+
+.filteredHotels {
+  width: 276px;
+  border: 1px solid #F5F5F5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filtered-child {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.filtered-child:hover {
+  background-color: rgba(10, 102, 187, 0.14);
+}
+
+.icons {
+  color: #0A66BB;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .HeroSection {
+    margin-left: 20px;
+    margin-top: 50px;
+    min-height: auto; 
+  }
+
+  .HeroBackground {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50vh; 
+  }
+
+  .HeroSection h1 {
+    font-size: 28px;
+  }
+
+  .HeroSection p {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .Heroinput {
+    margin-top: 50px;
+  }
+
+  .Heroinput input, button {
+    margin-left: 0;
+    margin-right: 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .input1 {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .input2, .input3, .input4 {
+    width: 100%;
+    max-width: 100px;
+  }
+
+  .Heroinput button {
+    width: 100%;
+    max-width: 100px;
+  }
+
+  .filteredHotels {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .HeroSection {
+    margin-left: 10px;
+    margin-top: 30px;
+    min-height: auto; 
+  }
+
+  .HeroBackground {
+    height: 40vh; 
+  }
+
+  .HeroSection h1 {
+    font-size: 24px;
+  }
+
+  .HeroSection p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .Heroinput {
+    margin-top: 30px;
+  }
+
+  .Heroinput input, button {
+    margin-left: 0;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .input1 {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .input2, .input3, .input4 {
+    width: 100%;
+    max-width: 80px;
+  }
+
+  .Heroinput button {
+    width: 100%;
+    max-width: 80px;
+  }
+
+  .filteredHotels {
+    width: 100%;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .HeroSection {
+    margin-left: 5px;
+    margin-top: 20px;
+    min-height: auto; 
+    padding-bottom: 20px; 
+  }
+
+  .HeroBackground {
+    height: 30vh; 
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .HeroSection h1 {
+    font-size: 20px;
+  }
+
+  .HeroSection p {
+    font-size: 10px;
+  }
+
+  .Heroinput {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1; 
+  }
+
+  .Heroinput input, button {
+    margin-left: 0;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .input1 {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .input2, .input3, .input4 {
+    width: 100%;
+    max-width: 60px;
+  }
+
+  .Heroinput button {
+    width: 100%;
+    max-width: 60px;
+  }
+
+  .filteredHotels {
+    width: 100%;
+    max-width: 120px;
+  }
+}
